@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectMatch</title>
+    <link rel="stylesheet" href="projects.css">
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <a href="home.html">
+                <img src="logo.png" class="logo">
+            </a>
+            <ul>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="signin.html">Sign Out</a></li>
+            </ul>
+        </div>
+        <h1>Projects</h1>
+        <h2>Browse these open source projects!</h2>
+    </div>
+
+    <div class="filter-nav">
+        <a href="#" data-filter="all">All Projects</a>
+        <a href="#" data-filter="Beginner">Beginner Projects</a>
+        <a href="#" data-filter="Intermediate">Intermediete Projects</a>
+        <a href="#" data-filter="Advanced">Advanced Projects</a>
+        <a href="#" class="createProj">Create Project</a>
+    </div>
+
+    <div class="projects">
+    </div>
+    <template id ="project-card">
+        <div class="project-card">
+            <div class="project-card-text">
+                <h3></h3>
+                <small><span class="type">Web Development -</span> <span class="difficulty"> Beginner Project</span></small>
+                <p class="description">Picture a geologist. Do you imagine someone who spends their days in remote field areas looking at rocks? Our planet and its geology can also be studied from space using only a computer and NASA data. Your challenge is to create an app that enables geologists to use NASA’s Earth observation data to conduct research. Use your imagination to show us that geology doesn’t always require field work to rock!</p>
+                <a href="#" class="primary-btn">Join Project</a>
+            </div>
+            <div class="project-card-photo">
+                <img src="https://live.staticflickr.com/4122/4882691196_d829bb6917_b.jpg" alt="Project Image">
+            </div>
+        </div>
+    </template>
+</body>
+</html>
